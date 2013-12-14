@@ -39,23 +39,6 @@ int main()
 	
 	inFile.open("BankRecords.txt"); // known file name
 
-	// the following code would be used if the user could enter a file. I originally used this
-	// but decided to switch. This will be useful in the project
-		/*cout << "Enter the input file name: \n"; 
-		cin.get(fileName, 50);
-		cin.ignore(100, '\n');
-		inFile.open(fileName); // example from the lecture on how to read a file name
-	
-		while (inFile.fail()) // check if file is valid
-		{
-			cout << "\aInvalid input file\n"; // throw error
-			cin.clear(); // clear flags
-			cout << "Enter the input file name: \n"; // enter the name again
-			cin.get(fileName, 50); // get the file name (up to 50 chars)
-			cin.ignore(100, '\n'); // ignore anything over 100
-			inFile.open(fileName);
-		} */
-
 	for (int i = 0; i < 5; i++) // loop to fill holder array with info
 	{
 		inFile >> holder[i].name >> holder[i].accountID >> holder[i].checking >> holder[i].saving
